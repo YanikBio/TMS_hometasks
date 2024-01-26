@@ -19,7 +19,7 @@ while True:
             print('Введите корректные значения a, b, c:')
             continue
     # part for finding the side c
-    if int(user_input) == 2:
+    elif int(user_input) == 2:
         print('Введите a, b и угол С')
         a, b, cornerC = [int(_) for _ in input().split()]
         if a > 0 and b > 0 and 0 < cornerC < 180:
