@@ -35,7 +35,7 @@ while True:
 
     R = (((a + b + c) / 2) - c) * m.tan(m.radians(cornerC) / 2)
     S =round(m.pi * (R ** 2), 3)
-    print(f'площадь вписанной окружности равна {S} см^3')
+    print(f'площадь вписанной окружности равна {S} см^2')
     break
 
 """
