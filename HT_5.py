@@ -1,7 +1,7 @@
 import math as m
 # print message for user and take from him a chose number
 print('Если вы вводите три стороны a, b, c, нажмите \'1\' если стороны a, b и угол С, нажмите \'2\'')
-user_input = input()
+user_input = int(input())
 # loop
 while True:
     a, b, c = 0, 0, 0
@@ -34,7 +34,7 @@ while True:
         continue
 
     R = (((a + b + c) / 2) - c) * m.tan(m.radians(cornerC) / 2)
-    S = m.pi * (R ** 2)
+    S =round(m.pi * (R ** 2), 3)
     print(f'площадь вписанной окружности равна {S} см^3')
     break
 
