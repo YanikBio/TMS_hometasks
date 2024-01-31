@@ -17,12 +17,12 @@ while 1:
 x = 2
 x1 = 0
 
-crutch = 0
+crutch = 0 
 if n < 0:  
     crutch = n  # crutch for n < 0 
     n = n * -1
 
-while x < A:
+while 1:
     if n == 1:
         print(f"Арифметическим корнем степени {n} числа {A} является само число {A} ")  # exception with sqrt = 1
         break
@@ -32,7 +32,7 @@ while x < A:
 
     x1 = 1/n * ((n-1) * x + (A / (x**(n-1))))
     if round(x, 3) == round(x1, 3) and crutch < 0:  # crutch!!! (костыли - наше всё!)
-        print(f"Арифметическим корнем степени {n} числа {A} является {1/(round(x1, 4))} ")
+        print(f"Арифметическим корнем степени {n} числа {A} является {round((1/x1), 4)}")
         break
     elif round(x, 3) == round(x1, 3):
         print(f"Арифметическим корнем степени {n} числа {A} является {round(x1, 4)} ")  # show the answer
