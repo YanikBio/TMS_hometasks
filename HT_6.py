@@ -18,7 +18,7 @@ x = 2
 x1 = 0
 
 crutch = 0 
-if n < 0:  
+if n < -1:  
     crutch = n  # crutch for n < 0 
     n = n * -1
 
@@ -28,6 +28,9 @@ while 1:
         break
     if A == 0:
         print(f"Любой корень числа {A} равен самому {A} ")  # exception for 0
+        break
+    if n == -1:
+        print(f"Любой корень числа {A} равен обратному числу {A}, то есть {1/A} ")
         break
 
     x1 = 1/n * ((n-1) * x + (A / (x**(n-1))))
