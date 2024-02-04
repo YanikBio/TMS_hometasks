@@ -1,7 +1,5 @@
-import matplotlib
-
 A = 0  # the user number
-n = 0  # the sqrt 
+n = 0  # the sqrt
 
 while 1:
     A = int(input("Введите число: "))
@@ -14,7 +12,7 @@ while 1:
     else:
         break
 
-x = 2
+x = n
 x1 = 0
 
 crutch = 0 
@@ -40,7 +38,7 @@ while 1:
         break
 
     x1 = 1/n * ((n-1) * x + (A / (x**(n-1))))
-    if round(x, 3) == round(x1, 3) and crutch < 0:  # crutch!!! (костыли - наше всё!)
+    if round(x, 4) == round(x1, 4) and crutch < 0:  # crutch!!! (костыли - наше всё!)
         print(f"Арифметическим корнем степени {n} числа {A} является {round((1/x1), 4)}")
         print(f"Количество итераций: {count}")
         break
